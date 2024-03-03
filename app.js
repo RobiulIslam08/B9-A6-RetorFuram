@@ -11,11 +11,15 @@ const allPost = async() => {
     //console.log(data.posts)
     data.posts.forEach(item => {
         const card = document.createElement('div')
+
+        const badgeClass = item.isActive ? "badge-accent" : "badge-error"
+
+        
        card.innerHTML = `  <div class="rounded-lg lg:w-[100%] mb-[20px] bg-[#7D7DFC1A] w-full flex shadow-xl">
         <!-- profile -->
         <div class=" w-[30%] lg:w-[15%] lg:p-5 p-0 lg:mt-0 lg:ml-0 mt-5 ml-2">
           <div class="indicator">
-            <span class="indicator-item badge badge-accent"></span>
+             <span class="indicator-item badge ${badgeClass}"></span>
             <img src=${item.image} alt="" class="grid rounded-xl lg:h-[72px] lg:w-[72px] h-[60px] w-[60px] bg-base-300 place-items-center">
           </div>
         </div>
