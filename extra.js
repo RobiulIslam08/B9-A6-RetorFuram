@@ -1,4 +1,4 @@
-<div class="rounded-lg lg:w-[65%] bg-[#7D7DFC1A] w-full flex">
+{/* <div class="rounded-lg lg:w-[65%] bg-[#7D7DFC1A] w-full flex">
         <!-- profile -->
         <div class="w-[15%] p-5">
           <div class="indicator">
@@ -47,4 +47,4 @@
 
 
         </div>
-      </div>
+      </div> */}
