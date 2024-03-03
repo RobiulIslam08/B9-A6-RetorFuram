@@ -2,86 +2,178 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Forum</title>
-    <!-- daisy ui and tailwind css link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Forum</title>
+  <!-- daisy ui and tailwind css link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- link css -->
-    <link rel="stylesheet" href="style.css">
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="w-[85%] mx-auto mt-3">
-    <!-- navber design start here -->
-    <section>
-      <div class="navbar bg-base-100 ">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </div>
-            <ul tabindex="0" class="flex flex-row menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-center rounded-box w-52">
-                <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="home"><img src="images/home.png" alt=""></li>
-                <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="pen"><img src="images/pen.png" alt=""></li>
-                <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="invite"><img src="images/profile.png" alt=""></li>
-                <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="flag"><img src="images/flag.png" alt=""></li>
-            </ul>
+  <!-- navber design start here -->
+  <section>
+    <div class="navbar bg-base-100 ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-          <a class="font-extrabold text-4xl font-mulish ">Retro</a>
+          <ul tabindex="0"
+            class="flex flex-row menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-center rounded-box w-52">
+            <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="home"><img
+                src="images/home.png" alt=""></li>
+            <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="pen"><img
+                src="images/pen.png" alt=""></li>
+            <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="invite"><img
+                src="images/profile.png" alt=""></li>
+            <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="flag"><img
+                src="images/flag.png" alt=""></li>
+          </ul>
         </div>
-       
-        <div class="navbar-end">
-            <div class="navbar-center  hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 gap-5">
-                  <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="home"><img src="images/home.png" alt=""></li>
-                  <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="pen"><img src="images/pen.png" alt=""></li>
-                  <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="invite"><img src="images/profile.png" alt=""></li>
-                  <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="flag"><img src="images/flag.png" alt=""></li>
-                </ul>
-              </div>
-          <a class="btn bg-[#797DFC] rounded-full px-6 text-white font-bold font-mulish text-xl hover:bg-[#797dfce9] ml-4">Sign In</a>
+        <a class="font-extrabold text-4xl font-mulish ">Retro</a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-center  hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 gap-5">
+            <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="home"><img
+                src="images/home.png" alt=""></li>
+            <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="pen"><img
+                src="images/pen.png" alt=""></li>
+            <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="invite"><img
+                src="images/profile.png" alt=""></li>
+            <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="flag"><img
+                src="images/flag.png" alt=""></li>
+          </ul>
+        </div>
+        <a
+          class="btn bg-[#797DFC] rounded-full px-6 text-white font-bold font-mulish text-xl hover:bg-[#797dfce9] ml-4">Sign
+          In</a>
+      </div>
+    </div>
+  </section>
+  <!-- navber design ends here -->
+
+  <!-- banner section start here -->
+  <section class="mt-[50px] mb-[100px]">
+    <div
+      class="flex flex-col lg:flex-row w-[100%] lg:h-[470px] h-full gap-8  bg-[url('images/bgbanner.png')] bg-[#12132D] bg-no-repeat bg-bottom rounded-xl lg:rounded-[22px] mb-7">
+      <!-- left div -->
+      <div
+        class="lg:w-[50%] w-full flex flex-col mt-2 justify-center lg:pl-16 p-4 text-center lg:space-y-7 space-y-3 font-mulish">
+        <h1 class="font-extrabold lg:text-6xl text-4xl text-[#FFFFFF]">Welcome to the <br> <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">ReTro</span> Forum</h1>
+        <p class="text-base font-medium text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug!
+        </p>
+        <label class=" input  rounded-full flex items-center m-10 lg:w-[400px] gap-2">
+          <input type="text" class="grow w-[50%]" placeholder="Search" />
+          <button
+            class=" w-[42%] lg:w-[30%]  bg-[#7D7DFC] py-[4px] px-4 rounded-full text-white font-bold text-[14px] lg:text-base">Search</button>
+        </label>
+      </div>
+
+      <!-- right div -->
+      <div class="lg:w-[50%] w-full flex flex-col justify-center  p-4 lg:pl-16">
+        <div class="lg:max-w-[370px] bg-[#FFFFFF] lg:max-h-[285px] lg:p-10 p-4 lgspace-y-6 rounded-2xl">
+          <div class="flex justify-between">
+            <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Registered Useres</h1>
+            <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
+          </div>
+          <div class="flex justify-between">
+            <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Forum</h1>
+            <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">05</h1>
+          </div>
+          <div class="flex justify-between">
+            <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Topics</h1>
+            <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
+          </div>
+          <div class="flex justify-between">
+            <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Rplies</h1>
+            <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- navber design ends here -->
+    </div>
+  </section>
+  <!-- banner section ends here -->
 
-    <!-- banner section start here -->
-    <section class="mt-[50px] ">
-      <div class="flex flex-col lg:flex-row w-[100%] lg:h-[470px] h-full gap-8  bg-[url('images/bgbanner.png')] bg-[#12132D] bg-no-repeat bg-bottom rounded-xl lg:rounded-[22px] mb-7">
-        <!-- left div -->
-        <div class="lg:w-[50%] w-full flex flex-col mt-2 justify-center lg:pl-16 p-4 text-center lg:space-y-7 space-y-3 font-mulish">
-          <h1 class="font-extrabold lg:text-6xl text-4xl text-[#FFFFFF]">Welcome to the <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">ReTro</span> Forum</h1>
-          <p class="text-base font-medium text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug!</p>
-          <label class=" input  rounded-full flex items-center m-10 lg:w-[400px] gap-2">
-            <input type="text" class="grow w-[50%]" placeholder="Search" />
-            <button class=" w-[42%] lg:w-[30%]  bg-[#7D7DFC] py-[4px] px-4 rounded-full text-white font-bold text-[14px] lg:text-base">Search</button>
-          </label>
-        </div>
+  <!-- lets discuss section start here -->
+  <section class="mb-[100px]">
+    <!-- header -->
+    <div class="text-center space-y-6 lg:w-[690px] w-[350px] mx-auto lg:mb-12 mb-8">
+      <h1 class="font-mulish font-extrabold text-4xl">Let’s Discuss</h1>
+      <p class="font-inter lg:text-lg text-base font-normal">Yes, you can run unit tests and view the results directly
+        within the app. The integrated testing features allow for a streamlined .</p>
+    </div>
+    <!-- header ends -->
 
-        <!-- right div -->
-        <div class="lg:w-[50%] w-full flex flex-col justify-center  p-4 lg:pl-16">
-          <div class="lg:max-w-[370px] bg-[#FFFFFF] lg:max-h-[285px] lg:p-10 p-4 lgspace-y-6 rounded-2xl">
-            <div class="flex justify-between">
-              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Registered Useres</h1>
-              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
-            </div>
-            <div class="flex justify-between">
-              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Forum</h1>
-              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">05</h1>
-            </div>
-            <div class="flex justify-between">
-              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Topics</h1>
-              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
-            </div>
-            <div class="flex justify-between">
-              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Rplies</h1>
-              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
-            </div>
+    <!-- card design start here -->
+    <div class="flex flex-col h-[270px] bg-[#7D7DFC1A] lg:flex-row gap-4">
+
+      <!-- left card-- profile card -->
+      <div class=" lg:w-[65%] bg-[#7D7DFC1A] w-full flex">
+        <!-- profile -->
+        <div class="w-[15%] p-5">
+          <div class="indicator">
+            <span class="indicator-item badge badge-accent"></span>
+            <div class="grid h-[72px] w-[72px] bg-base-300 place-items-center">content</div>
           </div>
         </div>
+        <!-- details -->
+        <div class="w-[85%]  p-5">
+
+          <!-- 1st -->
+          <div class="text-sm font-inter font-medium text-[#12132DCC] flex gap-7 mb-[12px]">
+            <h1># <span >Music</span></h1>
+            <h1>Author: Awlad Hossain</h1>
+          </div>
+
+          <!-- 2nd heading-->
+          <h1 class="font-mulish text-xl font-bold text-[#12132D] mb-[17px]">10 Kids Unaware of Their Halloween Costume</h1>
+
+          <!-- 3rd -->
+          <p class="text-[#12132D99] text-base font-inter font-normal mb-[44px]">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
+
+          <hr>
+
+          <!-- 4th icon -->
+          <div class="flex gap-8">
+            <div class="flex gap-2">
+              <img src="images/messege.png" alt="">
+              <p class="text-[#12132D99] text-base font-inter font-normal">550</p>
+            </div>
+            <div  class="flex gap-2">
+              <img src="images/eye.png" alt="">
+              <p class="text-[#12132D99] text-base font-inter font-normal">1566</p>
+            </div>
+            <div  class="flex gap-2">
+              <img src="images/clock.png" alt="">
+              <p class="text-[#12132D99] text-base font-inter font-normal">5 min</p>
+            </div>
+
+          </div>
+
+
+        </div>
       </div>
-    </section>
-    <!-- banner section ends here -->
+
+      <!-- right card-- select card -->
+      <div class="bg-gray-300 lg:w-[35%] w-full">
+        fsdfsdfsdf
+      </div>
+
+    </div>
+    <!-- card design ends here -->
+  </section>
+  <!-- lets discuss section ends here -->
+
 </body>
+
 </html>
