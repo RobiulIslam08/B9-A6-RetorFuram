@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Retro Forum</title>
   <!-- font awesome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- daisy ui and tailwind css link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -77,7 +79,8 @@
         <label class=" input  rounded-full flex items-center m-10 lg:w-[400px] gap-2">
           <input type="text" class="grow w-[50%]" placeholder="Search" id="input" />
           <button
-            class=" w-[42%] lg:w-[30%]  bg-[#7D7DFC] py-[4px] px-4 rounded-full text-white font-bold text-[14px] lg:text-base" onclick="handleSearch()">Search</button>
+            class=" w-[42%] lg:w-[30%]  bg-[#7D7DFC] py-[4px] px-4 rounded-full text-white font-bold text-[14px] lg:text-base"
+            onclick="handleSearch()">Search</button>
         </label>
       </div>
 
@@ -115,37 +118,32 @@
         within the app. The integrated testing features allow for a streamlined .</p>
     </div>
     <!-- header ends -->
-
+    <!-- spaner -->
+    <div class="hidden text-center" id="loading">
+      <span class="loading loading-bars loading-lg"></span>
+    </div>
     <!-- card design start here -->
     <div class="flex flex-col lg:flex-row gap-4">
 
       <!-- left card-- profile card -->
-    <div id="card-container">
-      <img src="" alt="">
-    </div>
-      
+      <div id="card-container">
+        <img src="" alt="">
+      </div>
+
 
       <!-- right card-- select card -->
       <div class=" rounded-lg lg:w-[35%] h-96 w-full">
         <!-- title and count -->
-       <div class="p-5 flex justify-between" >
-        <h1 class="text-[#12132D] text-xl font-bold ">Title</h1>
-        <div class="flex justify-between items-center  gap-4">
-          <i class="fa-solid fa-check text-green-900"></i>
-          <h1 class="text-[#12132D99] font-inter text-base font-normal">Mark as read <span id="count">0</span> </h1>
+        <div class="p-5 flex justify-between">
+          <h1 class="text-[#12132D] text-xl font-bold ">Title</h1>
+          <div class="flex justify-between items-center  gap-4">
+            <i class="fa-solid fa-check text-green-900"></i>
+            <h1 class="text-[#12132D99] font-inter text-base font-normal">Mark as read <span id="count">0</span> </h1>
+          </div>
         </div>
-       </div>
         <!-- title and count ends-->
         <div id="item-container">
-          <!-- <div class="flex justify-between p-5">
-            <h1 class="">how are you my dear</h1>
-          
-              <div class="flex gap-2 ">
-                <img src="images/eye.png" alt="">
-                <p class="text-[#12132D99] text-base font-inter font-normal">${item.view_count}</p>
-              </div>
-            
-          </div> -->
+
 
         </div>
 
@@ -157,6 +155,25 @@
   <!-- lets discuss section ends here -->
 
 
+  <!-- desing -->
+  <section class="bg-[#12132D] w-full lg:h-[400px] h-full rounded-2xl lg:pt-0 pt-10 mb-[100px] items-center flex flex-col-reverse lg:flex-row justify-between">
+    <div class="p-10 space-y-6">
+      <h1 class="font-mulish text-[40px] font-extrabold text-[#FFFFFF]">Join Our Forum</h1>
+      <p class="text-[#FFFFFFCC] text-lg font-normal">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results
+        directly within the app.</p>
+      <button class="bg-[#7D7DFC] px-4 py-2 rounded-full text-[#FFFFFF] font-bold">Registered Now</button>
+    </div>
+    <div class="pr-10">
+      <img src="images/joinforum.png" alt="">
+    </div>
+  </section>
+  
+
+
+
+  <footer>
+    
+  </footer>
 
 
 

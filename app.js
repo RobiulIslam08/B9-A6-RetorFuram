@@ -2,12 +2,13 @@
 const cardContainer = document.getElementById('card-container')
 const itemContainer = document.getElementById('item-container')
 let countNumber = 1;
-
-setTimeout(() => {
-  
-}, 2000);
+let load = document.getElementById('loading');
 
 const allPost = async() => {
+  setTimeout(() => {
+  
+  }, 3000);
+  load.classList.remove('hidden')
     const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts`)
     const data = await res.json();
     //console.log(data.posts)
@@ -17,7 +18,7 @@ const allPost = async() => {
         const badgeClass = item.isActive ? "badge-accent" : "badge-error"
 
         
-       card.innerHTML = `  <div class="rounded-lg lg:w-[100%] mb-[20px] bg-[#7D7DFC1A] w-full flex shadow-xl">
+       card.innerHTML = ` <div class="rounded-lg lg:w-[100%] mb-[20px] mt-10 bg-[#7D7DFC1A] w-full flex shadow-xl">
         <!-- profile -->
         <div class=" w-[30%] lg:w-[15%] lg:p-5 p-0 lg:mt-0 lg:ml-0 mt-5 ml-2">
           <div class="indicator">
@@ -68,6 +69,7 @@ const allPost = async() => {
         </div>
       </div>`
       cardContainer.appendChild(card)
+      load.classList.add('hidden')
       
     })
    
@@ -78,6 +80,8 @@ const allPost = async() => {
 
 
 const singlePost = async(id) => {
+  
+  load.classList.remove('hidden')
   const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${id}`)
   const data = await res.json();
   cardContainer.innerText = ''
@@ -139,11 +143,13 @@ const singlePost = async(id) => {
       </div>
     </div>`
     cardContainer.appendChild(card)
-    
+    load.classList.add('hidden')
   })
  
 
 }
+
+
 allPost() 
 function addItem(title, view) {
   console.log(title)
@@ -167,9 +173,9 @@ itemContainer.appendChild(div)
 }
 
 
+
 function handleSearch() {
   const input = document.getElementById('input').value;
   singlePost(input)
 
 }
-
