@@ -1,14 +1,4 @@
-
-const cardContainer = document.getElementById('card-container')
-
-
-const allPost = async() => {
-    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts')
-    const data = await res.json();
-    //console.log(data.posts)
-    data.posts.forEach(item => {
-        const card = document.createElement('div')
-       card.innerHTML = `  <div class="rounded-lg lg:w-[100%] mb-[20px] bg-[#7D7DFC1A] w-full flex">
+<div class="rounded-lg lg:w-[65%] bg-[#7D7DFC1A] w-full flex">
         <!-- profile -->
         <div class="w-[15%] p-5">
           <div class="indicator">
@@ -57,8 +47,4 @@ const allPost = async() => {
 
 
         </div>
-      </div>`
-      cardContainer.appendChild(card)
-    })
-}
-allPost() 
+      </div>
