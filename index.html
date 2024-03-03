@@ -12,50 +12,76 @@
     <!-- link css -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="w-[88%] mx-auto mt-3">
+<body class="w-[85%] mx-auto mt-3">
     <!-- navber design start here -->
-    <div class="navbar bg-base-100 ">
+    <section>
+      <div class="navbar bg-base-100 ">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabindex="0" class="flex flex-row menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-center rounded-box w-52">
-                <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="hello"><img src="images/home.png" alt=""></li>
+                <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="home"><img src="images/home.png" alt=""></li>
                 <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="pen"><img src="images/pen.png" alt=""></li>
-                <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="profile"><img src="images/profile.png" alt=""></li>
+                <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="invite"><img src="images/profile.png" alt=""></li>
                 <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="flag"><img src="images/flag.png" alt=""></li>
             </ul>
           </div>
           <a class="font-extrabold text-4xl font-mulish ">Retro</a>
         </div>
-        <!-- <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div> -->
+       
         <div class="navbar-end">
             <div class="navbar-center  hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 gap-5">
-                  <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="hello"><img src="images/home.png" alt=""></li>
+                  <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="home"><img src="images/home.png" alt=""></li>
                   <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="pen"><img src="images/pen.png" alt=""></li>
-                  <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="profile"><img src="images/profile.png" alt=""></li>
+                  <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="invite"><img src="images/profile.png" alt=""></li>
                   <li class="bg-[#12132D08] rounded-full tooltip hover:tooltip-open tooltip-top" data-tip="flag"><img src="images/flag.png" alt=""></li>
                 </ul>
               </div>
           <a class="btn bg-[#797DFC] rounded-full px-6 text-white font-bold font-mulish text-xl hover:bg-[#797dfce9] ml-4">Sign In</a>
         </div>
       </div>
+    </section>
     <!-- navber design ends here -->
+
+    <!-- banner section start here -->
+    <section class="mt-[50px] ">
+      <div class="flex flex-col lg:flex-row w-[100%] lg:h-[470px] h-full gap-8  bg-[url('images/bgbanner.png')] bg-[#12132D] bg-no-repeat bg-bottom rounded-xl lg:rounded-[22px] mb-7">
+        <!-- left div -->
+        <div class="lg:w-[50%] w-full flex flex-col mt-2 justify-center lg:pl-16 p-4 text-center lg:space-y-7 space-y-3 font-mulish">
+          <h1 class="font-extrabold lg:text-6xl text-4xl text-[#FFFFFF]">Welcome to the <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">ReTro</span> Forum</h1>
+          <p class="text-base font-medium text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug!</p>
+          <label class=" input  rounded-full flex items-center m-10 lg:w-[400px] gap-2">
+            <input type="text" class="grow w-[50%]" placeholder="Search" />
+            <button class=" w-[42%] lg:w-[30%]  bg-[#7D7DFC] py-[4px] px-4 rounded-full text-white font-bold text-[14px] lg:text-base">Search</button>
+          </label>
+        </div>
+
+        <!-- right div -->
+        <div class="lg:w-[50%] w-full flex flex-col justify-center  p-4 lg:pl-16">
+          <div class="lg:max-w-[370px] bg-[#FFFFFF] lg:max-h-[285px] lg:p-10 p-4 lgspace-y-6 rounded-2xl">
+            <div class="flex justify-between">
+              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Registered Useres</h1>
+              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Forum</h1>
+              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">05</h1>
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Topics</h1>
+              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">Rplies</h1>
+              <h1 class="text-[#12132DCC] font-medium lg:text-2xl text-lg">01</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section ends here -->
 </body>
 </html>
