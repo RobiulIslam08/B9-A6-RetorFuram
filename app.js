@@ -17,7 +17,7 @@ const allPost = async () => {
     const badgeClass = item.isActive ? "badge-accent" : "badge-error"
 
 
-    card.innerHTML = ` <div class="rounded-lg lg:w-[100%] mb-[20px] mt-10 bg-[#7D7DFC1A] w-full flex shadow-xl">
+    card.innerHTML = ` <div class="rounded-lg hover:bg-[#7d7dfc2e] lg:w-[100%] mb-[20px] mt-10 bg-[#7D7DFC1A] w-full flex shadow-xl">
         <!-- profile -->
         <div class=" w-[30%] lg:w-[15%] lg:p-5 p-0 lg:mt-0 lg:ml-0 mt-5 ml-2">
           <div class="indicator">
@@ -59,7 +59,7 @@ const allPost = async () => {
             </div>
            </div>
            <div class="flex justify-center items-center">
-            <button onclick="addItem('${item.title}', '${item.view_count}')"  class="bg-[#10B981] px-2 rounded-full"><i class="fa-regular fa-envelope-open text-white"></i></button>
+            <button onclick="addItem('${item.title.replace(/'/g,'@')}', '${item.view_count}')"  class="bg-[#10B981] px-2 rounded-full"><i class="fa-regular fa-envelope-open text-white"></i></button>
            </div>
 
           </div> 
@@ -85,7 +85,7 @@ const singlePost = async (id) => {
     const badgeClass = item.isActive ? "badge-accent" : "badge-error"
 
 
-    card.innerHTML = `  <div class="rounded-lg lg:w-[100%] mb-[20px] bg-[#7D7DFC1A] w-full flex shadow-xl">
+    card.innerHTML = `  <div class="rounded-lg lg:w-[100%] mb-[20px] bg-[#7D7DFC1A] w-full  flex shadow-xl">
       <!-- profile -->
       <div class=" w-[30%] lg:w-[15%] lg:p-5 p-0 lg:mt-0 lg:ml-0 mt-5 ml-2">
         <div class="indicator">
@@ -194,7 +194,7 @@ const latestPosts = async () =>{
     const destigation = item.author.designation ? item.author.designation : "Unknown"
     const latest = document.createElement('div')
     
-    latest.innerHTML = `<div class="card w-96 bg-base-100 shadow-xl">
+    latest.innerHTML = `<div class="card w-96 h-[500px] bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
       <img src=${item.cover_image} alt="Shoes" class="rounded-xl" />
     </figure>
@@ -204,8 +204,8 @@ const latestPosts = async () =>{
         <h2 class="card-title"><i class="fa-regular fa-calendar-minus"></i></h2>
         <p>${date}</p>
       </div>
-      <h1 class="text-[#12132D] font-extrabold font-mulish text-lg">${item.description}</h1>
-      <p class="text-[#12132D99] text-base font-normal font-mulish">${item.title}</p>
+      <h1 class="text-[#12132D] font-extrabold font-mulish text-lg">${item.title}</h1>
+      <p class="text-[#12132D99] text-base font-normal font-mulish">${item.description}</p>
       <div class="flex gap-3 items-center">
         <img src="images/Ellipse 1.png" alt="">
         <div>
