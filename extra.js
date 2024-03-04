@@ -48,3 +48,27 @@
 
         </div>
       </div> */}
+
+
+
+      <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body ">
+        <!-- date -->
+        <div class="flex gap-4 text-[#12132D99]">
+          <h2 class="card-title"><i class="fa-regular fa-calendar-minus"></i></h2>
+          <p>29 January 2024</p>
+        </div>
+        <h1 class="text-[#12132D] font-extrabold font-mulish text-lg">What will a mars habitat force that impact in our daily life</h1>
+        <p class="text-[#12132D99] text-base font-normal font-mulish">If a dog chews shoes whose shoes does he choose?</p>
+        <div class="flex gap-3 items-center">
+          <img src="images/Ellipse 1.png" alt="">
+          <div>
+            <h1 class="text-[#12132D] font-mulish text-base font-bold">Authour name</h1>
+            <h1 class="text-[#12132D99] text-sm font-normal font-mulish">destigation</h1>
+          </div>
+        </div>
+      </div>
+    </div>
