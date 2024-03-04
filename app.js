@@ -4,21 +4,21 @@ const itemContainer = document.getElementById('item-container')
 let countNumber = 1;
 let load = document.getElementById('loading');
 
-const allPost = async() => {
+const allPost = async () => {
   setTimeout(() => {
-  
+
   }, 3000);
   load.classList.remove('hidden')
-    const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts`)
-    const data = await res.json();
-    //console.log(data.posts)
-    data.posts.forEach(item => {
-        const card = document.createElement('div')
+  const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts`)
+  const data = await res.json();
+  //console.log(data.posts)
+  data.posts.forEach(item => {
+    const card = document.createElement('div')
 
-        const badgeClass = item.isActive ? "badge-accent" : "badge-error"
+    const badgeClass = item.isActive ? "badge-accent" : "badge-error"
 
-        
-       card.innerHTML = ` <div class="rounded-lg lg:w-[100%] mb-[20px] mt-10 bg-[#7D7DFC1A] w-full flex shadow-xl">
+
+    card.innerHTML = ` <div class="rounded-lg lg:w-[100%] mb-[20px] mt-10 bg-[#7D7DFC1A] w-full flex shadow-xl">
         <!-- profile -->
         <div class=" w-[30%] lg:w-[15%] lg:p-5 p-0 lg:mt-0 lg:ml-0 mt-5 ml-2">
           <div class="indicator">
@@ -68,31 +68,32 @@ const allPost = async() => {
 
         </div>
       </div>`
-      cardContainer.appendChild(card)
-      load.classList.add('hidden')
-      
-    })
-   
+    cardContainer.appendChild(card)
+    load.classList.add('hidden')
+
+  })
+
 
 }
 
 
 
 
-const singlePost = async(id) => {
-  
+const singlePost = async (id) => {
+
   load.classList.remove('hidden')
+
   const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${id}`)
   const data = await res.json();
   cardContainer.innerText = ''
   //console.log(data.posts)
   data.posts.forEach(item => {
-      const card = document.createElement('div')
+    const card = document.createElement('div')
 
-      const badgeClass = item.isActive ? "badge-accent" : "badge-error"
+    const badgeClass = item.isActive ? "badge-accent" : "badge-error"
 
-      
-     card.innerHTML = `  <div class="rounded-lg lg:w-[100%] mb-[20px] bg-[#7D7DFC1A] w-full flex shadow-xl">
+
+    card.innerHTML = `  <div class="rounded-lg lg:w-[100%] mb-[20px] bg-[#7D7DFC1A] w-full flex shadow-xl">
       <!-- profile -->
       <div class=" w-[30%] lg:w-[15%] lg:p-5 p-0 lg:mt-0 lg:ml-0 mt-5 ml-2">
         <div class="indicator">
@@ -145,22 +146,39 @@ const singlePost = async(id) => {
     cardContainer.appendChild(card)
     load.classList.add('hidden')
   })
- 
+
 
 }
 
 
-allPost() 
+load.classList.remove('hidden')
+setTimeout(() => {
+  allPost()
+  // singlePost()
+
+}, 2000);
+
+
+// load.classList.remove('hidden')
+// setTimeout(() => {
+//   singlePost()
+// }, 3000);
+
+
+
+
+
+// allPost() 
 function addItem(title, view) {
   console.log(title)
   console.log(view)
   let count = document.getElementById('count')
   count.innerText = countNumber
   countNumber = countNumber + 1
-  
+
 
   const div = document.createElement('div')
-  div.innerHTML  = `<div class="flex justify-between p-5 bg-[#12132D0D] rounded-lg shadow-lg mb-5">
+  div.innerHTML = `<div class="flex justify-between p-5 bg-[#12132D0D] rounded-lg shadow-lg mb-5">
   <h1 class="">${title}</h1>
 
     <div class="flex justify-center items-center gap-2 ">
@@ -169,13 +187,23 @@ function addItem(title, view) {
     </div>
   
 </div>`
-itemContainer.appendChild(div)
+  itemContainer.appendChild(div)
 }
+
 
 
 
 function handleSearch() {
   const input = document.getElementById('input').value;
-  singlePost(input)
+  load.classList.remove('hidden')
+  setTimeout(() => {
+
+    
+    singlePost(input)
+  }, 2000);
+
+
 
 }
+
+
